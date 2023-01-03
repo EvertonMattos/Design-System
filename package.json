@@ -1,6 +1,9 @@
 {
   "private": true,
-  "workspaces":[
+  "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "turbo": "^1.6.3"
+  }
 }
