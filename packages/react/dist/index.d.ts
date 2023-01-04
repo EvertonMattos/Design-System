@@ -205,6 +205,7 @@ declare const Box: _stitches_react_types_styled_component.StyledComponent<"div",
     zIndex: "zIndices";
 }, {}>>;
 interface BoxProps extends ComponentProps<typeof Box> {
+    as?: ElementType;
 }
 
 declare const Text: _stitches_react_types_styled_component.StyledComponent<"p", {
