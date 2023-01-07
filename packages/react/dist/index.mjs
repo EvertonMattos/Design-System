@@ -158,6 +158,7 @@ var Text = styled("p", {
   }
 });
 
+<<<<<<< HEAD
 // src/components/Avatar/styles.ts
 import * as Avatar from "@radix-ui/react-avatar";
 var AvatarContainer = styled(Avatar.Root, {
@@ -195,8 +196,33 @@ function Avatar2(props) {
     /* @__PURE__ */ jsx(AvatarFallBack, { delayMs: 600, children: /* @__PURE__ */ jsx(User, {}) })
   ] });
 }
+=======
+// src/components/Heading.tsx
+var Heading = styled("h2", {
+  fontFamily: "$default",
+  lineHeight: "$shorter",
+  margin: 0,
+  color: "$gray100",
+  variants: {
+    size: {
+      sm: { fontSize: "$xl" },
+      md: { fontSize: "$2xl" },
+      lg: { fontSize: "$4xl" },
+      "2xl": { fontSize: "$5xl" },
+      "3xl": { fontSize: "$6xl" },
+      "4xl": { fontSize: "$7xl" },
+      "5xl": { fontSize: "$8xl" },
+      "6xl": { fontSize: "$9xl" }
+    }
+  },
+  defaultVariants: {
+    size: "md"
+  }
+});
+>>>>>>> f80eb044296a3e0e003892bb5d6bc0537cb23162
 export {
   Avatar2 as Avatar,
   Box,
+  Heading,
   Text
 };
