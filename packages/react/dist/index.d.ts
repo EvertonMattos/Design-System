@@ -1,6 +1,8 @@
 import * as _stitches_react_types_styled_component from '@stitches/react/types/styled-component';
 import * as _stitches_react_types_css_util from '@stitches/react/types/css-util';
+import * as react from 'react';
 import { ComponentProps, ElementType } from 'react';
+import * as Avatar$1 from '@radix-ui/react-avatar';
 
 declare const Box: _stitches_react_types_styled_component.StyledComponent<"div", {}, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
@@ -416,9 +418,13 @@ interface TextProps extends ComponentProps<typeof Text> {
     as?: ElementType;
 }
 
+<<<<<<< HEAD
+declare const AvatarImage: _stitches_react_types_styled_component.StyledComponent<react.ForwardRefExoticComponent<Avatar$1.AvatarImageProps & react.RefAttributes<HTMLImageElement>>, {}, {}, _stitches_react_types_css_util.CSS<{}, {
+=======
 declare const Heading: _stitches_react_types_styled_component.StyledComponent<"h2", {
     size?: "sm" | "md" | "lg" | "2xl" | "4xl" | "5xl" | "6xl" | "3xl" | undefined;
 }, {}, _stitches_react_types_css_util.CSS<{}, {
+>>>>>>> f80eb044296a3e0e003892bb5d6bc0537cb23162
     colors: {
         white: string;
         black: string;
@@ -620,8 +626,17 @@ declare const Heading: _stitches_react_types_styled_component.StyledComponent<"h
     transition: "transitions";
     zIndex: "zIndices";
 }, {}>>;
+<<<<<<< HEAD
+
+interface AvatarProps extends ComponentProps<typeof AvatarImage> {
+}
+declare function Avatar(props: AvatarProps): JSX.Element;
+
+export { Avatar, AvatarProps, Box, BoxProps, Text, TextProps };
+=======
 interface HeadingProps extends ComponentProps<typeof Heading> {
     as?: ElementType;
 }
 
 export { Box, BoxProps, Heading, HeadingProps, Text, TextProps };
+>>>>>>> f80eb044296a3e0e003892bb5d6bc0537cb23162

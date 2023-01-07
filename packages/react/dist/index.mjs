@@ -158,6 +158,45 @@ var Text = styled("p", {
   }
 });
 
+<<<<<<< HEAD
+// src/components/Avatar/styles.ts
+import * as Avatar from "@radix-ui/react-avatar";
+var AvatarContainer = styled(Avatar.Root, {
+  borderRadius: "$full",
+  display: "inline-block",
+  width: "$12",
+  height: "$12",
+  overflow: "hidden"
+});
+var AvatarImage2 = styled(Avatar.AvatarImage, {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  borderRadius: "inherit"
+});
+var AvatarFallBack = styled(Avatar.Fallback, {
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  justifyContent: "center",
+  backgroundColor: "$gray600",
+  color: "$gray800",
+  svg: {
+    width: "$6",
+    height: "$6"
+  }
+});
+
+// src/components/Avatar/index.tsx
+import { User } from "phosphor-react";
+import { jsx, jsxs } from "react/jsx-runtime";
+function Avatar2(props) {
+  return /* @__PURE__ */ jsxs(AvatarContainer, { children: [
+    /* @__PURE__ */ jsx(AvatarImage2, __spreadValues({}, props)),
+    /* @__PURE__ */ jsx(AvatarFallBack, { delayMs: 600, children: /* @__PURE__ */ jsx(User, {}) })
+  ] });
+}
+=======
 // src/components/Heading.tsx
 var Heading = styled("h2", {
   fontFamily: "$default",
@@ -180,7 +219,9 @@ var Heading = styled("h2", {
     size: "md"
   }
 });
+>>>>>>> f80eb044296a3e0e003892bb5d6bc0537cb23162
 export {
+  Avatar2 as Avatar,
   Box,
   Heading,
   Text
