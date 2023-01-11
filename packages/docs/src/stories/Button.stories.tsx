@@ -17,6 +17,9 @@ export const Secondary: StoryObj<ButtonProps> = {
     variant: 'secondary',
     children: 'Create new',
   },
+  argTypes:{
+    onClick: { action: 'clicked' },
+  },
 }
 
 export const Tertiary: StoryObj<ButtonProps> = {
