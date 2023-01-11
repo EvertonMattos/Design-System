@@ -7,6 +7,9 @@ export default {
   component: Button,
   args: {
     children: 'Send',
+    variant:'primary',
+    size:'md',
+    disabled:false
   },
 } as Meta<ButtonProps>
 
@@ -18,6 +21,23 @@ export const Secondary: StoryObj<ButtonProps> = {
     children: 'Create new',
   },
   argTypes:{
+    variant:{
+      option:['primary','secondary','tartiary'],
+      control:{
+        type:'inline-radio'
+      }
+    },
+    size:{
+      option:['sm','md'],
+      control:{
+        type:'inline-radio'
+      }
+    },
+    disabled:{
+      control:{
+        type:'boolean'
+      }
+    },
     onClick: { action: 'clicked' },
   },
 }
